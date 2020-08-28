@@ -1,0 +1,118 @@
+
+.first-v {
+    // position: relative;
+    height: 800px;
+    width: 100%;
+    top: auto;
+    left: auto;
+    background-color: white;
+    @include sp {
+        height: 600px;
+    }
+}
+.left-back {
+    position: absolute;
+    z-index: 3;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 800px;
+    // width: 100%;
+    width: 52%;
+    background-color:white;
+    @include sp {
+        display: none;
+    }
+}
+
+.first-v-item__img {
+    z-index: 1;
+    left: 52%;
+    width:50%;
+	position:absolute;
+	right:0px;
+	height:100%;
+    width: 48%;
+    opacity: 1.0;
+    overflow:hidden;
+    background-size:contain;
+    z-index: 4;
+    @include tab {
+        margin-top: 100px;
+        left: 0px;
+        width: 100%;
+    }
+    @include sp {
+        height: 597px;
+    }
+    img {
+        width: 100%;
+        height: 800px;
+        @include tab {
+            left: 0px;
+            width: 100%;
+            background-size: cover
+        }
+        @include sp {
+            height:597px;
+        }
+    }
+}
+
+
+
+.we__v {
+    z-index: 4;
+    position: relative;
+    font-family: Zapfino,Regular;
+    font-size: 38px;
+    margin-left: 7%;
+    left: 107px;
+    top: 382px;
+    width: 70%;
+    @include tab {
+        position: relative;
+        text-align: center;
+        // margin-right: 0%;
+        // margin: 0%;
+        left: 20px;
+        color: #FFFFFF;
+        top: 200px;
+    }
+    @include sp {
+        // margin-right: -10%;
+        padding: 0%;
+        padding-right: 0%;
+        font-size: 28px;
+        margin: 0%;
+    }
+}
+
+.hair__v {
+    
+    z-index: 4;
+    position: relative;
+    font-family: ヒラギノ明朝 Pro,W3;
+    font-size: 38px;
+    margin-left: 7%;
+    margin-right: 0px;
+    left: 163px;
+    top: 296px;
+    width: 390px;
+    height: 128px;
+    @include tab {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        text-align: center;
+        margin-right: 0%;
+        color: #FFFFFF;
+        top: 400px;
+    }
+    @include sp {
+        width: 60%;
+        font-size: 28px;
+        margin-right: -10%
+        // font-size: 28px;
+    }
+}

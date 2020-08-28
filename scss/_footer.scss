@@ -1,0 +1,140 @@
+.wrapper {
+    min-height: 4000px;
+    position: relative;/*←相対位置*/
+}
+
+footer {
+    // display: flex;
+    // flex-direction: column;
+    position: absolute;/*←絶対位置*/
+    top: 4000px;
+    width: 85%;
+    height: 5%;
+    background-color: #FFFFFF;
+    color: #707070;
+    margin-left: 106px;
+    margin-right: 103px;
+    margin-bottom: 0px;
+    bottom: 75px; /*下に固定*/
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+        top: 5000px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+        width: 100%;
+    }
+    @include sp {
+        top: 5500px;
+        height: 200px;
+    }
+
+    .line {
+        position: absolute;
+        // top: 0px;
+        bottom: 200%;
+        height: 3px;
+        width: auto;
+        left:0;
+        right: 8%;
+        border: 1px solid #70707036;
+        margin-bottom: 83.5px;
+        @include tab {
+            text-align: center;
+            margin-left: 10px;
+            width: 85%;
+            // left: -7%;
+            left: 30px;
+            right: 1%;
+        }
+        @include sp {
+            position: relative;
+            top: -200px;
+        }
+    }
+    small {
+        margin: 3px;
+        font-size: 32px;
+        letter-spacing: 2px;
+        @include tab {
+            width: 100%;
+            // margin-left: 20%;
+            margin-bottom: 19px;
+            left: 0px;
+            right: 0px;
+            display: flex;
+            content: space-between;
+        }
+        @include sp {
+            bottom: 0px;
+            margin-bottom:-210px; 
+        }
+    }
+
+    // .fab fa-twitter {
+    //     color: red;
+    //     left: 387px;
+    //     @include tab {
+    //         margin-right: 20px;
+    //         margin-left: 138px;
+    //         margin-bottom: 19px;
+    //         right: 20px;
+    //     }
+    // }
+    
+    // .fab fa-facebook-square {
+    //     left: 416px;
+    //     @include tab {
+    //         margin-right: 20px;
+    //         margin-bottom: 19px;
+    //     }
+    // }
+
+    .fab {
+        color:black;
+    }
+
+    .fa-twitter:before {
+        @include tab {
+            margin-right: 25%;
+            margin-left: 500%;
+        }
+        @include sp {
+            margin-left:52px;
+        }
+    }
+    .fa-facebook-square:before {
+        @include tab {
+            margin-right: 0%;
+            margin-left: 565%;
+        }
+        @include sp {
+            margin-left: 0px;
+        }
+    }
+
+    .reserve {
+        width: 104px;
+        height: 14px;
+        margin-right: 103px;
+        font-family: Roboto Mono for Powerline;
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #707070;
+        padding:  13px 70px 13px 62px;
+        @include tab {
+            // margin-right: 20px;
+            text-align: center;
+            margin-left: 40%;
+        }
+        @include sp {
+            margin-left: 35%;
+        }
+    }
+}
+
